@@ -1,0 +1,6 @@
+<% @posts.each do |post| %>
+  <li><%= link_to post.title, controller: "posts", action: "show", id: post.id %></li>
+<% end %>
+
+<% link_to "포스트 생성", controller: "posts", action: "create" %>
+
